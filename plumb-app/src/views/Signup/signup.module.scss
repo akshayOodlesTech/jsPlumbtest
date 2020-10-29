@@ -1,0 +1,316 @@
+@import "../../utils/variables.scss";
+
+@font-face {
+  font-family: 'NewSide';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NewSide'), local('NewSide'),
+       url('../../assets/fonts/NewsideFPItalic.ttf') format('truetype'), /* IE6-IE8 */
+}
+
+@font-face {
+  font-family: 'GothicReg';
+  font-style: normal;
+  font-weight: 400;
+  src: local('GothicReg'), local('GothicReg'),
+       url('../../assets/fonts/AlternateGothicRegular.ttf') format('truetype'), /* IE6-IE8 */
+}
+
+* {
+  color: #fff;
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+button {
+color: #fff;
+}
+
+a {
+  text-decoration: underline;
+  color: white;
+  // font-size: 11px;
+}
+
+
+
+.sign-btn {
+  font-size: 14px;
+  background:$secondaryColor;
+  color:$primaryColor;
+  height: 36px;
+  font-weight: 700;
+  border-radius: 12px;
+  border: none;
+}
+
+.signup_container {
+    background-color: #062241 ;
+    // display: flex;
+    height: 100vh;
+
+    .intro-side {
+      // display: flex;
+      justify-content: flex-start ;
+      align-items: flex-start;
+      background-image: url('../../assets/images/city_background.jpg');
+      background-size: cover;
+      height: 100%;
+      padding: 0;
+      position: relative;
+
+      p {
+        font-family: "GothicReg";
+        font-size: 14px;
+      }
+
+      .hero-container{
+        // position: absolute;
+        // bottom: 210px;
+        // bottom: calc(50% - 20px);
+        width:100%;
+      }
+
+      .hero-text {
+        font-size: 3rem;
+        // font-weight: 600;
+        letter-spacing: 1px;
+        font-family: "NewSide";
+      }
+    }
+
+    .signup-side {
+      // display: flex;
+      // justify-content: flex-start ;
+      // align-items: center;
+      background: $primaryColor;
+      // position: fixed;
+      // bottom: 0;
+      padding: 30px;
+      // min-height: 278px;
+      // padding: 15px 20px;
+
+      h6 {
+        color: #fff;
+        font-family: "NewSide";
+      }
+
+      button {
+        background: rgb(45,245,253);
+        background: linear-gradient(0deg, rgba(45,245,253,1) 0%, rgba(34,167,195,1) 50%, rgba(45,245,253,1) 100%);
+      }
+    }
+
+    .bottom-container {
+      flex-direction: column-reverse;
+      display:flex;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .banner-content {
+      color: #fff;
+    
+      h2 {
+        font-family: "NewSide";
+      }
+    }
+}
+
+.signup-form {
+  width: 450px;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-size: 15px;
+}
+
+.signup-form form {
+  color: #999;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  /* background: #f2f3f7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+}
+
+.terms-container {
+  label{
+    font-family: "GothicReg";
+  }
+  
+}
+
+.signup-form h2 {
+  color: #636363;
+  margin: 0 0 15px;
+  position: relative;
+  text-align: center;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 8px 25px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-size: 12px;
+  outline: none;
+  background-color: transparent;
+}
+
+.signup-form input:focus {
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.signup-form .hint-text {
+  color: #999;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.signup-form .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-form .row div:first-child {
+  padding-right: 10px;
+}
+
+.form-control {
+  height: 29px;
+  box-shadow: none;
+  color: #969fa4;
+  border-radius: 0px;
+}
+
+
+.no-account {
+  background: #292828;
+  border-radius: 20px;
+  border: none;
+  font-size: 11px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.stepper-wrapper {
+  // margin-top: 35px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  // input {
+  //   width: 100% !important;
+  //   // padding: 8px 25px; //changed because of excessive left padding
+  //   padding: 8px 0;
+  //   // border: 1px solid gray;
+  //   // border-radius: 10px;
+  //   font-size: 12px;
+  //   outline: none;
+  //   background-color: transparent;
+  // }
+}
+
+.stepper-wrapper input:focus {
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+
+
+
+.invoice-choice {
+  border-radius: 20px;
+  color: #fff;
+  -webkit-box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.68);
+  -moz-box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.68);
+  box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.68);
+  // background-color: $secondaryColor;
+  background: rgb(45,245,253);
+  background: linear-gradient(0deg, rgba(45,245,253,1) 0%, rgba(34,167,195,1) 50%, rgba(45,245,253,1) 100%);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0.5) 0px 3px 8px 0px;
+  line-height: 0px;
+  cursor: pointer;
+
+  h6 {
+    text-align: left;
+    margin-bottom: 0px;
+    color: $primaryColor !important;
+    font-family: "NewSide";
+  }
+
+  label {
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: rgb(151, 151, 151);
+    color: $primaryColor;
+    font-style: italic;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+
+}
+
+.account-form {
+  // overflow-y: auto;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 8px;
+    padding: 0;
+  }
+
+  li {
+    width: 80px;
+  }
+
+  p {
+    color: rgb(151, 151, 151);
+    font-size: 12px;
+
+  }
+
+  label {
+    font-size: 14px;
+  }
+}
+
+.form-check {
+  input {
+    width: 5%;
+  }
+}
+
+.text-danger {
+  font-size: 12px;
+i {
+  color: red;
+}}
+
+.details_one {
+  width: 100%;
+  justify-content: space-between;
+
+  input {
+    width: 100% !important;
+    // padding: 8px 25px; //changed because of excessive left padding
+    padding: 8px 0;
+    // border: 1px solid gray;
+    // border-radius: 10px;
+    font-size: 12px;
+    outline: none;
+    background-color: transparent;
+  }
+
+}
+
+.details_two {
+  width: 100%;
+  justify-content: space-between;
+  
+}
