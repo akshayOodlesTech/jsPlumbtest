@@ -288,9 +288,9 @@ body {
     background-color: #012930
 }
 
-.demo-highlight {
+/* .demo-highlight {
     background: url("/img/back-green.jpg") repeat-x center
-}
+} */
 
 .logo-jsplumb img {
     padding-bottom: 16px;
@@ -329,7 +329,7 @@ body {
 }
 
 .browser-window td.center-top {
-    background: url("/img/browser-window-top-center.png") repeat-x;
+    /* background: url("/img/browser-window-top-center.png") repeat-x; */
     width: 100%
 }
 
@@ -352,11 +352,11 @@ body {
 }
 
 .background-blue {
-    background: url("/img/back-blue.jpg") repeat-x center
+    /* background: url("/img/back-blue.jpg") repeat-x center */
 }
 
 .background-dark-green {
-    background: url("/img/back-dark-green.jpg") repeat
+    /* background: url("/img/back-dark-green.jpg") repeat */
 }
 
 .btn-drop {
